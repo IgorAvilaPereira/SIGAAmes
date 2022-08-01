@@ -1,5 +1,19 @@
 function script2() {
   // limpar
+  //var vetDiario = conteudo.split("<quebra>");
+  //var qtde = vetDiario.length;
+	var qtde = 10;
+  var i = 0;
+  while (i < qtde) {
+    linha = vetDiario[i].split(";");
+    if (linha.length != 1) {
+    	etapa = linha[0];
+	    data = linha[1];
+    	atividade = linha[2];
+	 	document.querySelector("input[class='"+i+"']").value = atividade; 
+	}
+    i++;
+  }
 }
 function script1(conteudo) {
   // importar	
@@ -23,7 +37,7 @@ function script1(conteudo) {
     	etapa = linha[0];
 	    data = linha[1];
     	atividade = linha[2];
-	 	document.querySelector("input[class='"+i+"']").value = vetDiario[i];
+	 	document.querySelector("input[class='"+i+"']").value = atividade; 
 	}
     i++;
   }
