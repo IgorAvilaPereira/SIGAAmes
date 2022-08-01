@@ -5,13 +5,13 @@ function script2() {
 	var qtde = 10;
   var i = 0;
   while (i < qtde) {
-    linha = vetDiario[i].split(";");
-    if (linha.length != 1) {
+   // linha = vetDiario[i].split(";");
+    //if (linha.length != 1) {
     	//etapa = linha[0];
 	    //data = linha[1];
     	//atividade = linha[2];
 	 	document.querySelector("input[class='"+i+"']").value = ""; 
-	}
+	//}
     i++;
   }
 }
