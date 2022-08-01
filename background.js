@@ -2,7 +2,7 @@ function script2() {
   // limpar
   //var vetDiario = conteudo.split("<quebra>");
   //var qtde = vetDiario.length;
-	var qtde = 10;
+  var qtde = 10;
   var i = 0;
   while (i < qtde) {
    // linha = vetDiario[i].split(";");
@@ -34,9 +34,9 @@ function script1(conteudo) {
   while (i < qtde) {
     linha = vetDiario[i].split(";");
     if (linha.length != 1) {
-    	etapa = linha[0];
-	    data = linha[1];
-    	atividade = linha[2];
+    	//etapa = linha[0];
+	    data = linha[0];
+    	atividade = linha[1];
 	 	document.querySelector("input[class='"+i+"']").value = atividade; 
 	}
     i++;
