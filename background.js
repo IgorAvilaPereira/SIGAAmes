@@ -7,10 +7,10 @@ function script2() {
   while (i < qtde) {
     linha = vetDiario[i].split(";");
     if (linha.length != 1) {
-    	etapa = linha[0];
-	    data = linha[1];
-    	atividade = linha[2];
-	 	document.querySelector("input[class='"+i+"']").value = atividade; 
+    	//etapa = linha[0];
+	    //data = linha[1];
+    	//atividade = linha[2];
+	 	document.querySelector("input[class='"+i+"']").value = ""; 
 	}
     i++;
   }
