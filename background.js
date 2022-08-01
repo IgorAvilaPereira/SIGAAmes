@@ -16,29 +16,17 @@ function script2() {
   }
 }
 function script1(conteudo) {
-  // importar	
-/*
-1;21/02/2022;- introdução à disciplina de B.D - Como funcionará a disciplina: avaliações, atendimento, work-flow de trabalho, ava e etc. - Plano de ensino - Conceitos básicos de modelagem conceitual: entidade, relacionamento e atributos (chave, simples, composto, multivalorado);
-1;21/02/2022;- introdução à disciplina de B.D - Como funcionará a disciplina: avaliações, atendimento, work-flow de trabalho, ava e etc. - Plano de ensino - Conceitos básicos de modelagem conceitual: entidade, relacionamento e atributos (chave, simples, composto, multivalorado);
-1;21/02/2022;- introdução à disciplina de B.D - Como funcionará a disciplina: avaliações, atendimento, work-flow de trabalho, ava e etc. - Plano de ensino - Conceitos básicos de modelagem conceitual: entidade, relacionamento e atributos (chave, simples, composto, multivalorado);
-1;21/02/2022;- introdução à disciplina de B.D - Como funcionará a disciplina: avaliações, atendimento, work-flow de trabalho, ava e etc. - Plano de ensino - Conceitos básicos de modelagem conceitual: entidade, relacionamento e atributos (chave, simples, composto, multivalorado);
-1;21/02/2022;- introdução à disciplina de B.D - Como funcionará a disciplina: avaliações, atendimento, work-flow de trabalho, ava e etc. - Plano de ensino - Conceitos básicos de modelagem conceitual: entidade, relacionamento e atributos (chave, simples, composto, multivalorado);
-1;23/02/2022;- herança - cardinalidade - entidade fraca - exercícios;
-1;23/02/2022;- herança - cardinalidade - entidade fraca - exercícios;
-1;02/03/2022;- Exercícios 1 e 3 - Lista 1;
-1;02/03/2022;- Exercícios 1 e 3 - Lista 1;
-*/
+  // importar
   var vetDiario = conteudo.split("<quebra>");
   var qtde = vetDiario.length;
   var i = 0;
   while (i < qtde) {
     linha = vetDiario[i].split(";");
-    if (linha.length != 1) {
-    	//etapa = linha[0];
+    //if (linha.length != 1) {
 	    data = linha[0];
     	atividade = linha[1];
 	 	document.querySelector("input[class='"+i+"']").value = atividade; 
-	}
+	//}
     i++;
   }
 }
