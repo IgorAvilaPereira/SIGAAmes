@@ -1,33 +1,33 @@
-function script2() {
   // limpar
-  //var vetDiario = conteudo.split("<quebra>");
-  //var qtde = vetDiario.length;
-  var qtde = 10;
+function script2() {
+  var qtde = Number.MAX_VALUE;
   var i = 0;
   while (i < qtde) {
-   // linha = vetDiario[i].split(";");
-    //if (linha.length != 1) {
-    	//etapa = linha[0];
-	    //data = linha[1];
-    	//atividade = linha[2];
-	 	document.querySelector("input[class='"+i+"']").value = ""; 
-	//}
-    i++;
+      try {
+        document.querySelector("input[class='"+i+"']").value = ""; 
+        i++;        
+      } catch (error) {
+          // alert('quebrou!');
+          break;
+      }
   }
 }
+// importar
 function script1(conteudo) {
-  // importar
   var vetDiario = conteudo.split("<quebra>");
   var qtde = vetDiario.length;
   var i = 0;
   while (i < qtde) {
-    linha = vetDiario[i].split(";");
-    //if (linha.length != 1) {
-	    data = linha[0];
-    	atividade = linha[1];
-	 	document.querySelector("input[class='"+i+"']").value = atividade; 
-	//}
-    i++;
+    try {
+      linha = vetDiario[i].split(";");
+      data = linha[0];
+      atividade = linha[1];
+      document.querySelector("input[class='"+i+"']").value = atividade;
+      i++;
+    } catch (error) {
+      // alert('quebrou!');
+      break;
+    }
   }
 }
 
