@@ -1,6 +1,6 @@
 # SIGAAmes
 
-Extensão para o Google Chrome que estende as funcionalidades do SIGAAmes facilitando, por exemplo, o planejamento de disciplinas.
+Extensão para o Google Chrome que estende as funcionalidades do SIGAA facilitando, por exemplo, o planejamento de disciplinas.
 
 Criei este add-on depois de passar bastante trabalho copiando e colando meu programa da disciplina para o SIGAAmes. 
 
@@ -16,14 +16,14 @@ Será que não daria para copiar e colar tudo de uma só vez usando uma extensã
 6) Buscar a pasta descompactada do SIGAAmes
 7) E a instalação está completa!!
 
-<!--
 ## Uso
 
-1) No SIGAA acesse "Planejamento >> Alterar"
+1) No SIGAA acesse uma Disciplina
+2) Clique em "Turma" >> "Conteúdo Programático"
 2) Clique no ícone da extensão na barra do Google Chrome
 3) Cole seu planejamento na caixa de texto seguindo o formato de exemplo descrito na própria extensão
 4) E clique no botão "Importar"
--->
+
 
 ## Observações
 
