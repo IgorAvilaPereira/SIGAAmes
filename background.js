@@ -1,3 +1,23 @@
+// exportar com data
+function script4() {
+  var qtde = Number.MAX_VALUE;
+  var i = 0;
+  var conteudo = "";
+  while (i < qtde) {
+    try {      
+      var linha = document.querySelectorAll(".listing > tbody > tr")[i];
+      conteudo += linha.innerHTML.split("<td>")[1].replace("</td>", "")+";"+document.querySelector("input[class='" + i + "']").value + ";<br>";
+      i++;
+    } catch (error) {
+      // alert('quebrou!');
+      break;
+    }
+  }
+  newpopupWindow = window.open('', 'pagina', "width=400 height=400");
+  newpopupWindow.document.write("");
+  newpopupWindow.document.write(conteudo);
+}
+
 // exportar
 function script3() {
   var qtde = Number.MAX_VALUE;
@@ -86,6 +106,19 @@ document.addEventListener("DOMContentLoaded", function () {
       chrome.scripting.executeScript({
         target: { tabId: tab.id },
         func: script3/*,
+          args: [totalDeAulas]*/
+      });
+    })()
+  });
+
+  // exportar com data
+  document.querySelector("#btn4").addEventListener("click", function () {
+    // var totalDeAulas = prompt("Quantas linhas da tabela deseja apagar?");
+    (async () => {
+      const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+      chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        func: script4/*,
           args: [totalDeAulas]*/
       });
     })()
