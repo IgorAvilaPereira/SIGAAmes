@@ -20,9 +20,9 @@ Será que não daria para copiar e colar tudo de uma só vez usando uma extensã
 
 1) No SIGAA acesse uma Disciplina
 2) Clique em "Turma" >> "Conteúdo Programado"
-2) Clique no ícone da extensão na barra do Google Chrome
-3) Cole seu planejamento na caixa de texto seguindo o formato de exemplo descrito na própria extensão
-4) E clique no botão "Importar"
+3) Clique no ícone da extensão na barra do Google Chrome
+4) Cole seu planejamento na caixa de texto seguindo o formato de exemplo descrito na própria extensão
+5) E clique no botão "Importar"
 
 
 ## Observações
