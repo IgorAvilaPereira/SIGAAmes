@@ -2,7 +2,7 @@
 
 Extensão para o Google Chrome que estende as funcionalidades do SIGAA facilitando, por exemplo, o planejamento de disciplinas.
 
-Criei este add-on depois de passar bastante trabalho copiando e colando meu programa da disciplina para o SIGAAmes. 
+Criei este add-on depois de passar bastante trabalho copiando e colando meu programa da disciplina para o SIGAA usado pelo IFRS. 
 
 Será que não daria para copiar e colar tudo de uma só vez usando uma extensão do Google Chrome? Agora dá!
 
